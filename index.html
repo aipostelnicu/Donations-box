@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Donation box</title>
+  </head>
+  <body>
+    <div class="box-container">
+       
+      <div id="progressBar">
+        <div id="tooltip"></div> 
+        <div id="myProgress"></div> 
+      </div>
+
+      <div class="donation-container">
+      
+      <div id="text"><span id="daysLeft"></span> to fund this project.<br><br>
+        Join the <span id="donorsNo"></span> other donors who have already supported this project. Every dollar helps.</div>
+       <form> <!-- action="example.php" method="GET" target="_blank" -->
+        <div class="donation-form">
+        <span class="donations-buttons" id="currency">$
+        <input type="number" name="donated-amount" id="donated-amount" min="5" max="50" step="5" value="50"></span>
+        <button type="submit" class="donations-buttons" id="button-green" onclick="move()">Give now</button>
+      </form>
+        </div>
+      <div>
+        <em>
+          <a href="http://www.google.com" target="_blank">Why give $50?</a>
+        </em>
+      </div>
+      </div> 
+      <div class="bottom-form">
+          <button class="bottom-btn">Save for later</button>
+          <button class="bottom-btn">Tell your friends</button>
+        </div>  
+     </div> 
+     <script src="main.js"></script>
+  </body>
+</html>
