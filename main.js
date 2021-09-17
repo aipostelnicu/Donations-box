@@ -10,7 +10,6 @@ const addDonation = (event)=> {
   event.preventDefault(); //to stop from submitting
   let amount = parseInt(document.getElementById('donated-amount').value);
   amounts.push(amount);
-  console.log(amount);
   document.querySelector('form').reset; //to clear the form for the next entries
   
   let add = (a, b) =>  a + b
